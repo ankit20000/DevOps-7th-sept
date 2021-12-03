@@ -21,8 +21,10 @@ steps
 stage ('successfull excution') 
 {
 steps {
+  node (' newnodes') {
     echo "checkout has been done"
-}
+  }
+  }
 
 
 }
