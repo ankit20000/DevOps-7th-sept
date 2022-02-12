@@ -2,7 +2,7 @@ pipeline {
 
 agent {
 
-  label 'Ansible-server'
+  label 'buildserver'
 
 }
 stages {
@@ -18,16 +18,7 @@ steps
     
 }
 
-stage ('successfull excution') 
-{
-steps {
-  node (' newnodes') {
-    echo "checkout has been done"
-  }
-  }
 
-
-}
 }
 
 }
